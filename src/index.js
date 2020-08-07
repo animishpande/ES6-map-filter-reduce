@@ -1,3 +1,6 @@
+import emojipedia from "emojipedia";
+import React from "react";
+
 var numbers = [3, 56, 2, 48, 5];
 
 //Map -Create a new array by doing something with each item in an array.
@@ -37,3 +40,8 @@ var numbers = [3, 56, 2, 48, 5];
 //   return num > 10;
 // });
 // console.log(newNumber);
+function emoji() {
+return ;
+};
+const line = emojipedia.map(emoji);
+console.log(line);
