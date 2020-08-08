@@ -1,5 +1,4 @@
-import emojipedia from "emojipedia";
-import React from "react";
+import emojipedia from "./emojipedia";
 
 var numbers = [3, 56, 2, 48, 5];
 
@@ -40,8 +39,10 @@ var numbers = [3, 56, 2, 48, 5];
 //   return num > 10;
 // });
 // console.log(newNumber);
-function emoji() {
-return ;
-};
-const line = emojipedia.map(emoji);
-console.log(line);
+
+const newEmojipedia = emojipedia.map(function (emojiEntry) {
+  return emojiEntry.meaning.substring(0, 101);
+});
+
+
+console.log(newEmojipedia);
